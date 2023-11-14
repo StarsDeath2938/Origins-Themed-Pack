@@ -1,0 +1,12 @@
+{
+    "type": "origins:multiple",
+
+    "fire_immunity": {
+        "type": "origins:fire_immunity"
+    },
+
+    "wither_immunity": {
+        "type": "origins:effect_immunity",
+        "effect": "minecraft:wither"
+    }
+}

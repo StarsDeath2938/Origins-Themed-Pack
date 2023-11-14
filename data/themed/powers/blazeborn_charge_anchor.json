@@ -1,0 +1,44 @@
+{
+    "type": "origins:action_on_block_use",
+
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "entity.blaze.ambient"
+            },
+            {
+                "type": "origins:damage",
+                "amount": 2,
+                "damage_type": "minecraft:magic"
+            }
+        ]
+    },
+
+    "item_condition": {
+        "type": "origins:empty"
+    },
+
+    "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:block",
+                "block": "minecraft:respawn_anchor"
+            },
+            {
+                "type": "origins:block_state",
+                "property": "charges",
+                "value": 4,
+                "inverted": true
+            }
+        ]
+    },
+    "block_action": {
+        "type": "origins:modify_block_state",
+        "property": "charges",
+        "cycle": true
+    }
+
+}

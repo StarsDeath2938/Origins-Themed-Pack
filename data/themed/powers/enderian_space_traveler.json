@@ -1,0 +1,65 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 40,
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:apply_effect",
+				"effect": {
+					"effect": "minecraft:blindness",
+					"duration": 40,
+					"amplifier": 0
+				}
+			},
+			{
+				"type": "origins:ender_chest"
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:block.ender_chest.open"
+			},
+			{
+				"type": "origins:feed",
+				"food": -8,
+				"saturation": 0.5
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:empty"
+				}
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "offhand",
+				"item_condition": {
+					"type": "origins:empty"
+				}
+			},
+			{
+				"type": "origins:health",
+				"comparison": ">",
+				"compare_to": 12
+			},
+			{
+				"type": "origins:food_level",
+				"comparison": ">=",
+				"compare_to": 12
+			},
+			{
+				"type": "origins:sneaking"
+			}
+		]
+	},
+	"key": {
+		"key": "key.inventory",
+		"continuous": false
+	}
+}

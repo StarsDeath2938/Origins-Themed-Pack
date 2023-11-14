@@ -1,0 +1,72 @@
+{
+    "type": "origins:multiple",
+
+    "fireball": {
+        "type": "origins:fire_projectile",
+        "entity_type": "small_fireball",
+
+        "cooldown": 100,
+        "start_delay": 8,
+
+        "speed": 1.5,
+        "divergence": 1.0,
+        "count": 1,
+
+        "sound": "entity.blaze.shoot",
+
+        "key": {
+            "key": "key.primary_active",
+            "continuous": false
+        },
+
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                },
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:empty"
+                    }
+                }
+            ]
+        }
+    },
+
+    "flame": {
+        "type": "origins:modify_projectile_damage",
+
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:projectile",
+                    "projectile": "minecraft:arrow"
+                },
+                {
+                    "type": "origins:projectile",
+                    "projectile": "minecraft:spectral_arrow"
+                }
+            ]
+        },
+
+        "target_condition": {
+          "type": "origins:status_effect",
+          "effect": "minecraft:fire_resistance",
+          "inverted": true,
+          "min_amplifier": 0
+        },
+        
+        "target_action": {
+          "type": "origins:set_on_fire",
+          "duration": 5
+        }
+    }
+}
