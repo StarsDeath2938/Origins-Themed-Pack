@@ -1,44 +1,60 @@
 {
-    "type": "origins:action_on_block_use",
+    "type": "origins:multiple",
 
-    "entity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:play_sound",
-                "sound": "entity.blaze.ambient"
-            },
-            {
-                "type": "origins:damage",
-                "amount": 2,
-                "damage_type": "minecraft:magic"
-            }
-        ]
+    "anchor_charge": {
+        "type": "origins:action_on_block_use",
+    
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "entity.blaze.ambient"
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "themed:*_charge_cooldown"
+                }
+            ]
+        },
+    
+        "item_condition": {
+            "type": "origins:empty"
+        },
+    
+        "block_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:block",
+                    "block": "minecraft:respawn_anchor"
+                },
+                {
+                    "type": "origins:block_state",
+                    "property": "charges",
+                    "value": 4,
+                    "inverted": true
+                }
+            ]
+        },
+
+        "condition": {
+            "type": "origins:resource",
+            "resource": "themed:*_charge_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        },
+
+        "block_action": {
+            "type": "origins:modify_block_state",
+            "property": "charges",
+            "cycle": true
+        }
+    
     },
 
-    "item_condition": {
-        "type": "origins:empty"
-    },
-
-    "block_condition": {
-        "type": "origins:or",
-        "conditions": [
-            {
-                "type": "origins:block",
-                "block": "minecraft:respawn_anchor"
-            },
-            {
-                "type": "origins:block_state",
-                "property": "charges",
-                "value": 4,
-                "inverted": true
-            }
-        ]
-    },
-    "block_action": {
-        "type": "origins:modify_block_state",
-        "property": "charges",
-        "cycle": true
+    "charge_cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 200
     }
-
 }

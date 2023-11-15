@@ -1,11 +1,29 @@
 {
-    "type": "origins:modify_damage_taken",
-    "damage_condition": {
-        "type": "origins:in_tag",
-        "tag": "minecraft:is_freezing"
+
+    "type": "origins:multiple",
+
+    "damage_from_freezing": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:is_freezing"
+        },
+        "modifier": {
+            "operation": "multiply_base_multiplicative",
+            "value": 4
+        }
     },
-    "modifier": {
-        "operation": "multiply_base_multiplicative",
-        "value": 4
+
+    "damage_from_snowball" : {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+          "value": 3,
+          "operation": "addition"
+        },
+        "damage_condition": {
+          "type": "origins:projectile",
+          "projectile": "minecraft:snowball"
+        },
+        "hidden": true
     }
 }

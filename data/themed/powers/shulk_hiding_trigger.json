@@ -71,18 +71,8 @@
               "sound": "minecraft:entity.shulker.close"
             },
             {
-              "type": "origins:execute_command",
-              "command": "function salty:shulker_open",
-              "permission_level": 4
-            },
-            {
-              "type": "origins:delay",
-              "ticks": 10,
-              "action": {
-                "type": "origins:execute_command",
-                "command": "function salty:shulker_closed",
-                "permission_level": 4
-              }
+              "type": "origins:clear_effect",
+              "effect": "minecraft:blindness"
             }
           ]
         }

@@ -1,28 +1,15 @@
 {
 	"type": "origins:active_self",
-	"cooldown": 80,
+	"cooldown": 0,
 	"entity_action": {
 		"type": "origins:and",
 		"actions": [
-			{
-				"type": "origins:apply_effect",
-				"effect": {
-					"effect": "minecraft:blindness",
-					"duration": 40,
-					"amplifier": 0
-				}
-			},
 			{
 				"type": "origins:ender_chest"
 			},
 			{
 				"type": "origins:play_sound",
 				"sound": "minecraft:block.ender_chest.open"
-			},
-			{
-				"type": "origins:feed",
-				"food": -4,
-				"saturation": 0.5
 			}
 		]
 	},
@@ -48,13 +35,11 @@
 				"comparison": ">",
 				"compare_to": 4
 			},
-			{
-				"type": "origins:food_level",
-				"comparison": ">=",
-				"compare_to": 8
-			},
-			{
-				"type": "origins:sneaking"
+            {
+				"type": "origins:resource",
+				"comparison": "==",
+				"resource": "salty:shulk_resource_hiding",
+				"compare_to": 1
 			}
 		]
 	},

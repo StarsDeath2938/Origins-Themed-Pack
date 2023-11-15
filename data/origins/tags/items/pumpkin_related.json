@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "minecraft:pumpkin",
+    "minecraft:pumpkin_seeds",
+    "minecraft:carved_pumpkin",
+    "minecraft:jack_o_lantern",
     "minecraft:pumpkin_pie",
     {
       "id": "farmersdelight:pumpkin_slice",

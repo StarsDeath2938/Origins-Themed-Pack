@@ -210,7 +210,8 @@
 					"change": -1
 				},
 				{
-					"type": "origins:clear_effect"
+					"type": "origins:clear_effect",
+					"effect": "minecraft:blindness"
 				}
 			]
 		},
