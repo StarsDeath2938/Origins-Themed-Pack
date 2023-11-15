@@ -10,7 +10,8 @@
 
         "speed": 1.5,
         "divergence": 1.0,
-        "count": 1,
+        "count": 3,
+        "interval": 4,
 
         "sound": "entity.blaze.shoot",
 
@@ -35,6 +36,9 @@
                     "item_condition": {
                         "type": "origins:empty"
                     }
+                },
+                {
+                    "type": "origins:on_fire"
                 }
             ]
         }
