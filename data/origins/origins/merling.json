@@ -8,13 +8,10 @@
     "origins:like_water",
     "origins:aquatic",
     "origins:conduit_power_on_land",
-    "origins:air_from_potions",
-    "salty:merling_status_bar",
-    "salty:merling_breath_when_spawn",
-    "salty:merling_glow_in_water",
-    "salty:merling_catch_the_rainbow",
-    "salty:merling_rest_in_sea",
-    "salty:merling_taunt"
+    "themed:air_from_potions",
+    "themed:merling_breath_when_spawn",
+    "themed:merling_glow_in_water",
+    "themed:merling_catch_the_rainbow"
   ],
   "icon": {
     "item": "minecraft:cod"
