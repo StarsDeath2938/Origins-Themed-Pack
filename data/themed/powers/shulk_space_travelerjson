@@ -38,7 +38,7 @@
             {
 				"type": "origins:resource",
 				"comparison": "==",
-				"resource": "salty:shulk_resource_hiding",
+				"resource": "themed:shulk_resource_hiding",
 				"compare_to": 1
 			}
 		]
