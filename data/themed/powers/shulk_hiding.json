@@ -98,36 +98,6 @@
 		},
 		"hidden": true
 	},
-	"self_blindness": {
-		"type": "origins:modify_status_effect_amplifier",
-		"status_effect": "minecraft:blindness",
-		"modifier": {
-			"operation": "add_base_early",
-			"value": 3
-		},
-		"condition": {
-			"type": "origins:resource",
-			"comparison": "==",
-			"resource": "themed:shulk_resource_hiding",
-			"compare_to": 1
-		},
-		"hidden": true
-	},
-	"self_slowness": {
-		"type": "origins:modify_status_effect_amplifier",
-		"status_effect": "minecraft:slowness",
-		"modifier": {
-			"operation": "add_base_early",
-			"value": 6
-		},
-		"condition": {
-			"type": "origins:resource",
-			"comparison": "==",
-			"resource": "themed:shulk_resource_hiding",
-			"compare_to": 1
-		},
-		"hidden": true
-	},
 	"self_weakness": {
 		"type": "origins:modify_damage_dealt",
 		"modifier": {

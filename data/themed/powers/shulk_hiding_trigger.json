@@ -72,6 +72,22 @@
             {
               "type": "origins:play_sound",
               "sound": "minecraft:entity.shulker.close"
+            },
+            {
+              "type": "origins:apply_effect",
+              "effect": {
+                  "effect": "minecraft:slowness",
+                  "duration": -1,
+                  "amplifier": 6
+              }
+            },
+            {
+              "type": "origins:apply_effect",
+              "effect": {
+                  "effect": "minecraft:blindness",
+                  "duration": -1,
+                  "amplifier": 3
+              }
             }
           ]
         }
