@@ -33,6 +33,14 @@
             {
               "type": "origins:play_sound",
               "sound": "minecraft:entity.shulker.open"
+            },
+            {
+              "type": "origins:clear_effect",
+              "effect": "minecraft:blindness"
+            },
+            {
+              "type": "origins:clear_effect",
+              "effect": "minecraft:slowness"
             }
           ]
         }
@@ -64,10 +72,6 @@
             {
               "type": "origins:play_sound",
               "sound": "minecraft:entity.shulker.close"
-            },
-            {
-              "type": "origins:clear_effect",
-              "effect": "minecraft:blindness"
             }
           ]
         }

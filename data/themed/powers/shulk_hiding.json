@@ -45,16 +45,12 @@
 			"value": "1.0"
 		},
 		"condition": {
-			"type": "origins:or",
-			"conditions": [
-				{
-					"type": "origins:resource",
-					"comparison": "==",
-					"resource": "themed:shulk_resource_hiding",
-					"compare_to": 1
-				}
-			]
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_resource_hiding",
+			"compare_to": 1
 		},
+		"tick_rate": 4,
 		"hidden": true
 	},
 	"invulner_from_projectile": {
@@ -117,6 +113,21 @@
 		},
 		"hidden": true
 	},
+	"self_slowness": {
+		"type": "origins:modify_status_effect_amplifier",
+		"status_effect": "minecraft:slowness",
+		"modifier": {
+			"operation": "add_base_early",
+			"value": 6
+		},
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_resource_hiding",
+			"compare_to": 1
+		},
+		"hidden": true
+	},
 	"self_weakness": {
 		"type": "origins:modify_damage_dealt",
 		"modifier": {
@@ -155,26 +166,6 @@
 		},
 		"hidden": true
 	},
-	"prevent_moving": {
-		"type": "origins:conditioned_attribute",
-		"modifier": {
-			"attribute": "minecraft:generic.movement_speed",
-			"operation": "multiply_total",
-			"value": -1
-		},
-		"condition": {
-			"type": "origins:or",
-			"conditions": [
-				{
-					"type": "origins:resource",
-					"comparison": "==",
-					"resource": "themed:shulk_resource_hiding",
-					"compare_to": 1
-				}
-			]
-		},
-		"hidden": true
-	},
 	"prevent_jumping": {
 		"type": "origins:modify_jump",
 		"modifier": {
@@ -199,6 +190,16 @@
 		},
 		"hidden": true
 	},
+	"prevent_item_use": {
+		"type": "origins:prevent_item_use",
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_resource_hiding",
+			"compare_to": 1
+		},
+		"hidden": true
+	},
 	"callback": {
 		"type": "origins:action_on_callback",
 		"entity_action_respawned": {
@@ -207,11 +208,16 @@
 				{
 					"type": "origins:change_resource",
 					"resource": "themed:shulk_resource_hiding",
-					"change": -1
+					"operation": "set",
+					"change": 0
 				},
 				{
 					"type": "origins:clear_effect",
 					"effect": "minecraft:blindness"
+				},
+				{
+					"type": "origins:clear_effect",
+					"effect": "minecraft:slowness"
 				}
 			]
 		},

@@ -7,7 +7,7 @@
     "themed:shulk_natural_armor",
     "themed:shulk_resource_hiding",
     "themed:shulk_hiding_trigger",
-    "themed:shulk_hiding_functions"
+    "themed:shulk_hiding"
   ],
   "icon": {
     "item": "minecraft:shulker_shell"
