@@ -6,7 +6,12 @@
     "origins:phasing",
     "origins:invisibility",
     "origins:burn_in_daylight",
-    "origins:phantomize_overlay"
+    "origins:phantomize_overlay",
+    "themed:phantom_hide_in_dark",
+    "themed:phantom_hunger_over_time",
+    "themed:phantom_night_vision",
+    "themed:phantom_phasing",
+    "themed:phantom_particle"
   ],
   "icon": {
     "item": "minecraft:phantom_membrane"
