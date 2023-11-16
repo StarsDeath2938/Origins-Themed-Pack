@@ -1,0 +1,58 @@
+{
+    "type": "origins:multiple",
+
+    "prevent_block_selection": {
+        "type": "origins:prevent_block_selection",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:phantomize"
+        },
+        "hidden": true
+    },
+
+    "prevent_sprinting": {
+        "type": "origins:prevent_sprinting",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:phantomize"
+                },
+                {
+                    "type": "origins:in_block_anywhere"
+                }
+            ]
+        },
+        "hidden": true
+    },
+
+    "prevent_collision": {
+		"type": "origins:prevent_entity_collision",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:phantomize"
+        },
+		"hidden": true
+	},
+
+    "prevent_elytra_flight": {
+        "type": "origins:prevent_elytra_flight",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:phantomize"
+        },
+		"hidden": true
+    },
+
+    "slow_falling": {
+        "type": "origins:modify_falling",
+        "velocity": 0.4,
+        "take_fall_damage": false,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:phantomize"
+        },
+        "hidden": true
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "type": "origins:night_vision",
+    "strength": 0.4,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water",
+                "inverted": true
+            },
+            {
+                "type": "origins:in_block_anywhere",
+                "inverted": true
+            }
+        ]
+    }
+}

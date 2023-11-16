@@ -1,0 +1,15 @@
+{
+    "type": "origins:particle",
+    "particle": "minecraft:smoke",
+    "frequency": 8,
+    "visible_while_invisible": true,
+    "spread": {
+        "x": 0.5,
+        "y": 1.0,
+        "z": 0.5
+    },
+    "condition": {
+        "type": "origins:invisible"
+    },
+    "hidden": true
+}
