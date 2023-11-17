@@ -12,6 +12,7 @@
   "icon": {
     "item": "minecraft:shulker_shell"
   },
+  "unchoosable": true,
   "order": 1,
   "impact": 1
 }
