@@ -13,6 +13,6 @@
     "item": "minecraft:shulker_shell"
   },
   "unchoosable": true,
-  "order": 1,
+  "order": 4,
   "impact": 1
 }
