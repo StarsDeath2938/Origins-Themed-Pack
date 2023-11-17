@@ -16,6 +16,7 @@
   "icon": {
     "item": "minecraft:phantom_membrane"
   },
+  "unchoosable": true,
   "order": 3,
   "impact": 3
 }
