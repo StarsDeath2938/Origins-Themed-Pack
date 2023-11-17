@@ -1,0 +1,60 @@
+{
+  "origin.origins.human.name": "人类",
+  "origin.origins.human.description": "不做任何修改，原版的游戏体验等待着你。",
+
+  "origin.origins.merling.name": "海的子嗣",
+  "origin.origins.merling.description": "从海里来，往海里去。",
+
+  "origin.origins.blazeborn.name": "来自地狱",
+  "origin.origins.blazeborn.description": "你逐渐适应了炽热的环境。",
+
+  "origin.origins.enderian.name": "???",
+  "origin.origins.enderian.description": "你将前往何处？",
+
+  "enchantment.origins.water_protection.desc": "在接触水体时，延后因水毒性而受到伤害的时间。",
+
+  "power.origins.water_vulnerability.name": "水毒性",
+  "power.origins.water_vulnerability.description": "接触任何形式的水都会对你造成伤害。",
+
+  "power.origins.water_breathing.name":"鳃",
+  "power.origins.water_breathing.description":"你需要通过接触水来维持呼吸。",
+
+  "power.origins.like_water.name":"漂浮",
+  "power.origins.like_water.description":"浮力使你在水中不会自然下沉。",
+
+  "power.origins.water_vision.name":"海洋之眼",
+  "power.origins.water_vision.description":"你对水底的一切了如指掌。浸没在水中时，你的视野能力将会大幅提升。",
+
+  "power.themed.merling_ocean_spawn.name": "海",
+  "power.themed.merling_ocean_spawn.description":"你将在暖水海洋出生。",
+
+  "power.themed.merling_water_friendly.name":"海洋亲和力",
+  "power.themed.merling_water_friendly.description":"你的行动能力不会因为浸没在水中而受到影响。",
+
+  "power.themed.merling_catch_the_rainbow.name": "在大地之上呼唤",
+  "power.themed.merling_catch_the_rainbow.description":"迫切的想要回到海底..它仍在跳动。当你身处陆地之上时，手持海洋之心将赋予你呼唤雷暴的能力；这将消耗一个海洋之心。",
+
+  "power.themed.blazeborn_nether_spawn.name": "神曲",
+  "power.themed.blazeborn_nether_spawn.description":"你将在位于地狱的诡异森林中出生。",
+
+  "power.themed.blazeborn_immunity.name": "地狱抵抗",
+  "power.themed.blazeborn_immunity.description":"你无惧火焰和凋零。",
+
+  "power.themed.blazeborn_inferno.name": "炽热",
+  "power.themed.blazeborn_inferno.description":"你射出的箭矢将被引燃。当你处于燃烧状态时，你将能够发射火球。",
+
+  "power.themed.blazeborn_lava_wander.name": "熔岩漫步者",
+  "power.themed.blazeborn_lava_wander.description":"你能够直接骑乘炽足兽，不需要安装鞍座。",
+
+  "power.themed.blazeborn_freeze_fragile.name": "畏惧寒冷",
+  "power.themed.blazeborn_freeze_fragile.description":"你将因寒冷而受到额外伤害。",
+
+  "power.themed.enderian_ender_pearl.name": "穿梭",
+  "power.themed.enderian_ender_pearl.description":"每隔一段时间，你都能够扔出一个不造成伤害的末影珍珠。",
+
+  "power.themed.enderian_space_traveler.name": "空间旅行者",
+  "power.themed.enderian_space_traveler.description":"当你处于空手状态并潜行时，打开背包将同时为你打开末影存储。这个能力会消耗饱食度，并要求你的生命值与饱食度处于较高水平。",
+
+  "power.themed.enderian_pumpkin_hate.name": "???",
+  "power.themed.enderian_pumpkin_hate.description":"阻止你以任何形式感知 ???，万圣节除外。"
+}
