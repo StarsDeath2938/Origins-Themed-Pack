@@ -1,10 +1,10 @@
 {
   "loading_priority": 10,
   "powers": [
+    "themed:enderian_ender_pearl",
     "origins:water_vulnerability",
     "origins:damage_from_potions",  
     "origins:ender_particles",
-    "themed:enderian_ender_pearl",
     "themed:enderian_pumpkin_hate",
     "themed:enderian_extra_reach",
     "themed:enderian_space_traveler"

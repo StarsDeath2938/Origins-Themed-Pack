@@ -1,6 +1,7 @@
 {
   "loading_priority": 10,
   "powers": [
+    "themed:merling_ocean_spawn",
     "origins:water_breathing",
     "origins:water_vision",
     "origins:aqua_affinity",
@@ -8,9 +9,7 @@
     "origins:like_water",
     "origins:aquatic",
     "origins:conduit_power_on_land",
-    "themed:merling_aquatic",
     "themed:merling_air_from_potions",
-    "themed:merling_ocean_spawn",
     "themed:merling_glow_in_water",
     "themed:merling_catch_the_rainbow"
   ],

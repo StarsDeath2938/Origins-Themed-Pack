@@ -1,6 +1,7 @@
 {
   "loading_priority": 10,
   "powers": [
+    "themed:blazeborn_nether_spawn",
     "origins:water_vulnerability",
     "origins:damage_from_potions",
     "themed:blazeborn_charge_anchor",
@@ -8,7 +9,6 @@
     "themed:blazeborn_inferno",
     "themed:blazeborn_lava_wander",
     "themed:blazeborn_freeze_fragile",
-    "themed:blazeborn_nether_spawn",
     "themed:blazeborn_particles"
   ],
   "icon": {
