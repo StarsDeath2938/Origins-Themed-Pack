@@ -37,8 +37,8 @@
                 {
                     "type": "origins:block_state",
                     "property": "charges",
-                    "value": 4,
-                    "inverted": true
+                    "comparison": "<",
+                    "compare_to": 4
                 }
             ]
         },
@@ -54,7 +54,7 @@
             "type": "origins:modify_block_state",
             "property": "charges",
             "operation": "add",
-            "value": 1
+            "change": 1
         }
     
     },
