@@ -2,7 +2,10 @@
     "type": "origins:multiple",
 
     "fire_immunity": {
-        "type": "origins:fire_immunity"
+        "type": "origins:invulnerability",
+        "damage_condition": {
+          "type": "origins:fire"
+        }
     },
 
     "wither_immunity": {
