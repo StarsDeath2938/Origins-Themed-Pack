@@ -53,7 +53,8 @@
         "block_action": {
             "type": "origins:modify_block_state",
             "property": "charges",
-            "cycle": true
+            "operation": "add",
+            "value": 1
         }
     
     },
