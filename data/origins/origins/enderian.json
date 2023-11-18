@@ -7,8 +7,7 @@
     "origins:ender_particles",
     "themed:enderian_pumpkin_hate",
     "themed:enderian_extra_reach",
-    "themed:enderian_space_traveler",
-    "themed:enderian_status_bar"
+    "themed:enderian_space_traveler"
   ],
   "icon": {
     "item": "minecraft:ender_pearl"

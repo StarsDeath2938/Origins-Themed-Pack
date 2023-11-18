@@ -11,8 +11,7 @@
     "origins:conduit_power_on_land",
     "themed:merling_air_from_potions",
     "themed:merling_glow_in_water",
-    "themed:merling_catch_the_rainbow",
-    "themed:merling_status_bar"
+    "themed:merling_catch_the_rainbow"
   ],
   "icon": {
     "item": "minecraft:cod"
