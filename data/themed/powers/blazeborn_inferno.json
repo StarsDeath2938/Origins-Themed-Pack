@@ -16,7 +16,7 @@
         "sound": "entity.blaze.shoot",
 
         "key": {
-            "key": "key.primary_active",
+            "key": "key.origins.primary_active",
             "continuous": false
         },
 
@@ -36,6 +36,9 @@
                     "item_condition": {
                         "type": "origins:empty"
                     }
+                },
+                {
+                    "type": "origins:on_fire"
                 }
             ]
         }
