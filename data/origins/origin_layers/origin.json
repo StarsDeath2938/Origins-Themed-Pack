@@ -4,11 +4,9 @@
   "enabled": true,
   "origins": [
     "origins:human",
-    "origins:shulk",
-    "origins:enderian",
     "origins:merling",
-    "origins:blazeborn",
-    "origins:phantom"
+    "origins:enderian",
+    "origins:blazeborn"
   ],
   "allow_random": true,
   "exclude_random": [
