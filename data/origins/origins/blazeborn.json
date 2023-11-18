@@ -9,7 +9,8 @@
     "themed:blazeborn_inferno",
     "themed:blazeborn_lava_wander",
     "themed:blazeborn_freeze_fragile",
-    "themed:blazeborn_particles"
+    "themed:blazeborn_particles",
+    "themed:blazeborn_status_bar"
   ],
   "icon": {
     "item": "minecraft:blaze_powder"
