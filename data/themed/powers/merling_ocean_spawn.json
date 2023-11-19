@@ -1,7 +1,24 @@
 {
-    "type": "origins:modify_player_spawn",
-    "dimension": "minecraft:overworld",
-    "biome": "minecraft:beach",
-
-    "spawn_strategy": "default"
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:water_breathing",
+            "duration": 2400,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    },
+    "entity_action_respawned": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:water_breathing",
+            "duration": 600,
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        }
+    },
+    "execute_chosen_when_orb": false
 }
