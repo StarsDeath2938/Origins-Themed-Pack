@@ -10,14 +10,14 @@
         },
         "modifier": {
             "operation": "multiply_base_multiplicative",
-            "value": 4
+            "value": 1
         }
     },
 
     "damage_from_snowball" : {
         "type": "origins:modify_damage_taken",
         "modifier": {
-          "value": 3,
+          "value": 1,
           "operation": "addition"
         },
         "damage_condition": {
