@@ -1,0 +1,25 @@
+{
+    "type": "origins:particle",
+    "particle": "minecraft:electric_spark",
+    "frequency": 8,
+    "visible_while_invisible": true,
+    "spread": {
+        "x": 0.5,
+        "y": 1.0,
+        "z": 0.5
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:invisible"
+            },
+            {
+                "type": "origins:brightness",
+                "comparison": ">",
+                "compare_to": 0.4
+            }
+        ]
+    },
+    "hidden": true
+}

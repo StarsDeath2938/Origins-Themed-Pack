@@ -1,0 +1,27 @@
+{
+    "type": "origins:multiple",
+    
+    "entity_group": {
+        "type": "origins:entity_group",
+        "group": "arthropod"
+    },
+
+    "fragile": {
+        "type": "origins:attribute",
+        "modifier": {
+          "name": "Arthropod health reduction",
+          "attribute": "minecraft:generic.max_health",
+          "value": -6.0,
+          "operation": "addition"
+        }
+    },
+
+    "effect_immunity": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:poison",
+            "minecraft:hunger",
+            "minecraft:nausea"
+        ]
+    }
+}

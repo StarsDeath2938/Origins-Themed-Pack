@@ -1,0 +1,28 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:attacker",
+        "entity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_block_anywhere",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "origins:cobwebs"
+                    }
+                },
+                {
+                    "type": "origins:entity_group",
+                    "group": "arthropod",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "modifier": {
+        "name": "Arthropod take less damage from attacker in cobwebs.",
+        "operation": "multiply_total_multiplicative",
+        "value": -0.5
+    }
+}

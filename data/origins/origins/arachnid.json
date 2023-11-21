@@ -1,0 +1,14 @@
+{
+	"loading_priority": 10,
+	"powers": [
+		"origins:climbing",
+		"origins:master_of_webs",
+		"themed:arachnid_arthropod",
+		"themed:arachnid_cobweb_tied"
+	],
+	"icon": {
+		"item": "minecraft:cobweb"
+	},
+	"order": 1,
+	"impact": 1
+}
