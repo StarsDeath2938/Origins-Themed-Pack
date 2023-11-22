@@ -1,0 +1,335 @@
+{
+	"type": "origins:multiple",
+
+	"trigger": {
+		"type": "origins:active_self",
+		"cooldown": 80,
+		"entity_action": {
+			"type": "origins:if_else_list",
+			"actions": [
+				{
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:resource",
+								"comparison": "==",
+								"resource": "themed:shulk_hiding_resource",
+								"compare_to": 1
+							},
+							{
+								"type": "origins:on_block"
+							}
+						]
+					},
+					"action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:change_resource",
+								"resource": "themed:shulk_hiding_resource",
+								"operation": "set",
+								"change": 0
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.shulker.open"
+							},
+							{
+								"type": "origins:clear_effect",
+								"effect": "minecraft:blindness"
+							}
+						]
+					}
+				},
+				{
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "origins:resource",
+								"comparison": "==",
+								"resource": "themed:shulk_hiding_resource",
+								"compare_to": 0
+							},
+							{
+								"type": "origins:on_block"
+							},
+							{
+								"type": "origins:apply_effect",
+								"effect": {
+									"effect": "minecraft:blindness",
+									"amplifier": 3,
+									"duration": -1,
+									"is_ambient": true,
+									"show_particles": false,
+									"show_icon": false
+								}
+							}
+						]
+					},
+					"action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:change_resource",
+								"resource": "themed:shulk_hiding_resource",
+								"operation": "set",
+								"change": 1
+							},
+							{
+								"type": "origins:play_sound",
+								"sound": "minecraft:entity.shulker.close"
+							}
+						]
+					}
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:on_block",
+			"inverted": false
+		},
+		"key": {
+			"key": "key.origins.primary_active",
+			"continuous": false
+		}
+	},
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"start_value": 0,
+		"name": "Hiding",
+		"description": "Whether or not you are hiding."
+	},
+
+	"change_model_color": {
+		"type": "origins:model_color",
+		"red": 0.6,
+		"green": 0.3,
+		"blue": 0.75,
+		"alpha": 1,
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+
+	"damage_resistance": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"value": -0.8,
+			"operation": "multiply_total"
+		},
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+	"knockback_resistance": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.knockback_resistance",
+			"operation": "addition",
+			"value": "1.0"
+		},
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+	"invulner_from_projectile": {
+		"type": "origins:invulnerability",
+		"damage_condition": {
+			"type": "origins:projectile"
+		},
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+	"apply_weakness_when_hit": {
+		"type": "origins:attacker_action_when_hit",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:weakness",
+						"duration": 180,
+						"amplifier": 0,
+						"is_ambient": true
+					}
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:entity.shulker.hurt_closed"
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		},
+		"cooldown": 0
+	},
+
+	"hiding_blindness": {
+		"type": "origins:stacking_status_effect",
+		"min_stacks": 0,
+		"max_stacks": 1,
+		"duration_per_stack": -1,
+		"effect": {
+			"effect": "minecraft:blindness",
+			"amplifier": 3,
+			"is_ambient": true,
+			"show_particles": false,
+			"show_icon": false
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"comparison": "==",
+					"resource": "themed:shulk_hiding_resource",
+					"compare_to": 1
+				},
+				{
+					"type": "origins:status_effect",
+					"effect": "minecraft:blindness",
+					"inverted": true
+				}
+			]
+		}
+	},
+	"prevent_melee_damage": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -1
+		},
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+	"prevent_ranged_damage": {
+		"type": "origins:modify_projectile_damage",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -1
+		},
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+	"prevent_block_selection": {
+		"type": "origins:prevent_block_selection",
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+	"prevent_item_use": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:food",
+					"inverted": true
+				},
+				{
+					"type": "origins:ingredient",
+					"ingredient": {
+						"item": "minecraft:potion"
+					},
+					"inverted": true
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+	"prevent_moving": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "multiply_total",
+			"value": -1
+		},
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+	"prevent_jumping": {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -1
+		},
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+	"prevent_collision": {
+		"type": "origins:prevent_entity_collision",
+		"condition": {
+			"type": "origins:resource",
+			"comparison": "==",
+			"resource": "themed:shulk_hiding_resource",
+			"compare_to": 1
+		}
+	},
+	"callback": {
+		"type": "origins:action_on_callback",
+		"entity_action_respawned": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"resource": "themed:shulk_hiding_resource",
+					"operation": "set",
+					"change": 0
+				},
+				{
+					"type": "origins:clear_effect",
+					"effect": "minecraft:blindness"
+				}
+			]
+		},
+		"execute_chosen_when_orb": true
+	},
+	
+	"hidden": true
+}
