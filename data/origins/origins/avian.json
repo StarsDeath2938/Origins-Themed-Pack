@@ -1,0 +1,14 @@
+{
+    "loading_priority": 10,
+    "powers": [
+        "origins:like_air",
+        "themed:avian_feather_weight",
+        "themed:avian_require_fresh_air",
+        "themed:avian_momentum"
+    ],
+    "icon": {
+        "item": "minecraft:feather"
+    },
+    "order": 0,
+    "impact": 2
+}
