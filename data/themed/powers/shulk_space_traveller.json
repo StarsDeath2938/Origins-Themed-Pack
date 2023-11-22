@@ -1,0 +1,35 @@
+{
+    "type": "origins:inventory",
+    "title": "container.shulker_inventory_power",
+    "drop_on_death": true,
+    "container_type": "chest",
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:empty"
+				}
+			},
+			{
+				"type": "origins:equipped_item",
+				"equipment_slot": "offhand",
+				"item_condition": {
+					"type": "origins:empty"
+				}
+			},
+            {
+                "type": "origins:resource",
+                "comparison": "==",
+                "resource": "themed:shulk_hiding_resource",
+                "compare_to": 1
+            }
+		]
+	},
+    "key": {
+        "key": "key.inventory",
+        "continuous": false
+    }
+}
