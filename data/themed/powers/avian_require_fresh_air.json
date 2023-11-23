@@ -12,12 +12,12 @@
 	},
 	"flesh_air_powered": {
 		"type": "origins:stacking_status_effect",
-		"min_stacks": -240,
-		"max_stacks": 60,
+		"min_stacks": -180,
+		"max_stacks": 30,
 		"duration_per_stack": 10,
 		"effects": [
 			{
-				"effect": "minecraft:weakness",
+				"effect": "minecraft:slowness",
 				"is_ambient": true,
 				"show_particles": false,
 				"show_icon": true
@@ -40,7 +40,7 @@
 					"type": "origins:on_block",
 					"block_condition": {
 						"type": "origins:height",
-						"comparison": "<=",
+						"comparison": "<",
 						"compare_to": 16
 					}
 				}
