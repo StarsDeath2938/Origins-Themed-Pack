@@ -20,12 +20,9 @@
 					"type": "origins:empty"
 				}
 			},
-            {
-                "type": "origins:resource",
-                "comparison": "==",
-                "resource": "themed:shulk_hiding_resource",
-                "compare_to": 1
-            }
+			{
+				"type": "origins:sneaking"
+			}
 		]
 	},
     "key": {
