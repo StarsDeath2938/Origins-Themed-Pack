@@ -1,0 +1,26 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "self_action": {
+        "type": "origins:change_resource",
+        "resource": "themed:avian_momentum_momentum",
+        "change": -2
+    },
+    "damage_condition": {
+        "type": "origins:projectile",
+        "inverted": true
+    },
+    "condition": {
+        "type": "origins:in_block_anywhere",
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:water"
+        },
+        "comparison": ">=",
+        "compare_to": 1
+    },
+    "modifier": {
+        "name": "Extra damage when having momentum",
+        "operation": "multiply_total_multiplicative",
+        "value": 0.5
+    }
+}
