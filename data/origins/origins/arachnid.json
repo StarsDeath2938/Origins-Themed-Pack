@@ -4,8 +4,7 @@
 		"origins:climbing",
 		"origins:master_of_webs",
 		"themed:arachnid_arthropod",
-		"themed:arachnid_cobweb_tied",
-		"themed:arachnid_cobweb_cushion"
+		"themed:arachnid_cobweb_tied"
 	],
 	"icon": {
 		"item": "minecraft:cobweb"
