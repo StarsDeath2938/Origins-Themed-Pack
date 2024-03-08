@@ -1,52 +1,38 @@
 {
     "type": "origins:multiple",
 
-    "fireball": {
-        "type": "origins:fire_projectile",
-        "entity_type": "small_fireball",
-
-        "cooldown": 100,
-        "start_delay": 8,
-
-        "speed": 1.5,
-        "divergence": 1.0,
-        "count": 3,
-        "interval": 4,
-
-        "sound": "entity.blaze.shoot",
-
-        "key": {
-            "key": "key.origins.primary_active",
-            "continuous": false
-        },
-
+    "burning": {
+        "type": "origins:burn",
+        "interval": 20,
+        "burn_duration": 1,
         "condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:equipped_item",
-                    "equipment_slot": "mainhand",
-                    "item_condition": {
-                        "type": "origins:empty"
-                    }
-                },
-                {
-                    "type": "origins:equipped_item",
-                    "equipment_slot": "offhand",
-                    "item_condition": {
-                        "type": "origins:empty"
-                    }
-                },
-                {
-                    "type": "origins:on_fire"
-                }
-            ]
+            "type": "origins:power_active",
+            "power": "*:blazeborn_selfignite"
         }
     },
 
     "flame": {
-        "type": "origins:modify_projectile_damage",
+        "type": "origins:modify_damage_dealt",
+        "condition": {
+            "type": "origins:on_fire"
+        },
+        "target_condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:fire_resistance",
+            "inverted": true,
+            "min_amplifier": 0
+        },
+        "target_action": {
+            "type": "origins:set_on_fire",
+            "duration": 5
+        }
+    },
 
+    "flame_arrow": {
+        "type": "origins:modify_projectile_damage",
+        "condition": {
+            "type": "origins:on_fire"
+        },
         "damage_condition": {
             "type": "origins:or",
             "conditions": [
@@ -60,17 +46,48 @@
                 }
             ]
         },
-
         "target_condition": {
-          "type": "origins:status_effect",
-          "effect": "minecraft:fire_resistance",
-          "inverted": true,
-          "min_amplifier": 0
+            "type": "origins:status_effect",
+            "effect": "minecraft:fire_resistance",
+            "inverted": true,
+            "min_amplifier": 0
         },
-        
         "target_action": {
-          "type": "origins:set_on_fire",
-          "duration": 5
+            "type": "origins:set_on_fire",
+            "duration": 5
+        }
+    },
+
+    "flame_barrier": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 10,
+        "effects": [
+            {
+                "effect": "minecraft:regeneration",
+                "amplifier": 1,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            },
+            {
+                "effect": "minecraft:resistance",
+                "amplifier": 1,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            },
+            {
+                "effect": "minecraft:slowness",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            }
+        ],
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:blazeborn_selfignite"
         }
     }
 }

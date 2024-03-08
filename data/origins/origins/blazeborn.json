@@ -1,10 +1,11 @@
 {
   "loading_priority": 10,
   "powers": [
-    "themed:blazeborn_nether_spawn",
     "themed:common_water_vulnerability",
+    "themed:blazeborn_nether_spawn",
     "themed:blazeborn_charge_anchor",
     "themed:blazeborn_immunity",
+    "themed:blazeborn_selfignite",
     "themed:blazeborn_inferno",
     "themed:blazeborn_lava_wander",
     "themed:blazeborn_freeze_fragile",

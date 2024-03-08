@@ -1,8 +1,8 @@
 {
   "loading_priority": 10,
   "powers": [
-    "themed:enderian_ender_pearl",
     "themed:common_water_vulnerability",
+    "themed:enderian_ender_pearl",
     "origins:ender_particles",
     "themed:enderian_pumpkin_hate",
     "themed:enderian_extra_reach",
