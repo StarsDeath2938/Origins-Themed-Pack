@@ -24,7 +24,7 @@
         },
         "target_action": {
             "type": "origins:set_on_fire",
-            "duration": 5
+            "duration": 4
         }
     },
 
