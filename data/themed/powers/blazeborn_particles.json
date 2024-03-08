@@ -19,9 +19,18 @@
         "frequency": 4,
         "hidden": true,
         "condition": {
-            "type": "origins:dimension",
-            "dimension": "minecraft:the_nether",
-            "inverted": false
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:dimension",
+                    "dimension": "minecraft:the_nether",
+                    "inverted": false
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:blazeborn_selfignite"
+                }
+            ]
         }
     },
 
