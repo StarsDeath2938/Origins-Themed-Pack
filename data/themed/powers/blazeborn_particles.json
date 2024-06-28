@@ -28,7 +28,7 @@
                 },
                 {
                     "type": "origins:power_active",
-                    "power": "*:blazeborn_selfignite"
+                    "power": "*:*_selfignite"
                 }
             ]
         }
