@@ -32,16 +32,19 @@
   "power.themed.merling_water_friendly.description":"你的行动能力不会因为浸没在水中而受到影响。",
 
   "power.themed.merling_catch_the_rainbow.name": "在大地之上呼唤",
-  "power.themed.merling_catch_the_rainbow.description":"迫切的想要回到海底..它仍在跳动。当你身处陆地之上时，手持海洋之心将赋予你呼唤雷暴的能力；这将消耗一个海洋之心。",
+  "power.themed.merling_catch_the_rainbow.description":"当你身处于陆地之上，且当前世界天气为晴时，手持海洋之心并激活该能力将消耗海洋之心并召唤雷暴。",
 
   "power.themed.blazeborn_nether_spawn.name": "神曲",
   "power.themed.blazeborn_nether_spawn.description":"你将在位于地狱的诡异森林中出生。",
 
   "power.themed.blazeborn_immunity.name": "地狱抵抗",
-  "power.themed.blazeborn_immunity.description":"你无惧火焰和凋零。",
+  "power.themed.blazeborn_immunity.description":"你将不会收到火焰和凋零效果的影响。",
 
   "power.themed.blazeborn_inferno.name": "炽热",
-  "power.themed.blazeborn_inferno.description":"你射出的箭矢将被引燃。当你处于燃烧状态时，你将能够发射火球。",
+  "power.themed.blazeborn_inferno.description":"当你处于燃烧状态时，你造成的伤害将持续附加点燃效果。",
+
+  "power.themed.blazeborn_selfignite.name": "自燃",
+  "power.themed.blazeborn_selfignite.description":"点燃自身，在血量不为满时为自身持续施加生命恢复，抗性提升与缓慢效果。效果持续期间再次激活或接触水体将结束此状态。",
 
   "power.themed.blazeborn_lava_wander.name": "熔岩漫步者",
   "power.themed.blazeborn_lava_wander.description":"你能够直接骑乘炽足兽，不需要安装鞍座。",
@@ -50,14 +53,14 @@
   "power.themed.blazeborn_charge_anchor.description":"处于空手时与重生锚交互将为其充能，并对你造成微弱的伤害。",
 
   "power.themed.blazeborn_freeze_fragile.name": "畏惧寒冷",
-  "power.themed.blazeborn_freeze_fragile.description":"你将因寒冷而受到额外伤害。",
+  "power.themed.blazeborn_freeze_fragile.description":"你将从寒冷中受到额外伤害。",
 
   "power.themed.enderian_ender_pearl.name": "穿梭",
   "power.themed.enderian_ender_pearl.description":"每隔一段时间，你都能够扔出一个不造成伤害的末影珍珠。",
 
   "power.themed.enderian_space_traveler.name": "空间旅行者",
-  "power.themed.enderian_space_traveler.description":"当你处于空手状态并潜行时，打开背包将同时为你打开末影存储。这个能力会消耗饱食度，并要求你的生命值与饱食度处于较高水平。",
+  "power.themed.enderian_space_traveler.description":"当你处于空手状态并潜行时，打开背包将同时为你打开末影存储。这个能力会消耗饱食度，并要求你的生命值处于较高水平。",
 
   "power.themed.enderian_pumpkin_hate.name": "???",
-  "power.themed.enderian_pumpkin_hate.description":"阻止你以任何形式感知 ???，万圣节除外。"
+  "power.themed.enderian_pumpkin_hate.description":"阻止你以任何形式感知 ???，万圣节除外！"
 }
