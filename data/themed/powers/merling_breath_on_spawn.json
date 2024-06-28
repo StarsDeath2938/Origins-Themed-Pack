@@ -14,5 +14,6 @@
             "show_icon": false
         }
     },
-    "execute_chosen_when_orb": false
+    "execute_chosen_when_orb": false,
+    "hidden": true
 }
