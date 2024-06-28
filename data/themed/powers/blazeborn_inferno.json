@@ -58,11 +58,12 @@
         }
     },
 
-    "flame_barrier": {
+    "fire_again": {
         "type": "origins:stacking_status_effect",
+        "tick_rate": 4,
         "min_stacks": 0,
         "max_stacks": 1,
-        "duration_per_stack": 10,
+        "duration_per_stack": 4,
         "effects": [
             {
                 "effect": "minecraft:regeneration",
@@ -86,8 +87,18 @@
             }
         ],
         "condition": {
-            "type": "origins:power_active",
-            "power": "*:blazeborn_selfignite"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:blazeborn_selfignite"
+                },
+                {
+                    "type": "origins:health",
+                    "comparison": "<",
+                    "compare_to": 20
+                }
+            ]
         }
     }
 }
