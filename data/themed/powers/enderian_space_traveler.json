@@ -18,11 +18,6 @@
 			{
 				"type": "origins:play_sound",
 				"sound": "minecraft:block.ender_chest.open"
-			},
-			{
-				"type": "origins:feed",
-				"food": -4,
-				"saturation": 0.5
 			}
 		]
 	},
@@ -46,11 +41,6 @@
 			{
 				"type": "origins:health",
 				"comparison": ">",
-				"compare_to": 4
-			},
-			{
-				"type": "origins:food_level",
-				"comparison": ">=",
 				"compare_to": 8
 			},
 			{
