@@ -1,16 +1,6 @@
 {
     "type": "origins:multiple",
 
-    "burning": {
-        "type": "origins:burn",
-        "interval": 20,
-        "burn_duration": 1,
-        "condition": {
-            "type": "origins:power_active",
-            "power": "*:*_selfignite"
-        }
-    },
-
     "flame": {
         "type": "origins:modify_damage_dealt",
         "condition": {
@@ -56,5 +46,49 @@
             "type": "origins:set_on_fire",
             "duration": 5
         }
+    },
+
+    "fire_again": {
+        "type": "origins:stacking_status_effect",
+        "tick_rate": 4,
+        "min_stacks": 0,
+        "max_stacks": 2,
+        "duration_per_stack": 4,
+        "effects": [
+            {
+                "effect": "minecraft:regeneration",
+                "amplifier": 1,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            },
+            {
+                "effect": "minecraft:resistance",
+                "amplifier": 1,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            },
+            {
+                "effect": "minecraft:slowness",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            }
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_fire"
+                },
+                {
+                    "type": "origins:health",
+                    "comparison": "<",
+                    "compare_to": 20
+                }
+            ]
+        },
+        "hidden": true
     }
 }
