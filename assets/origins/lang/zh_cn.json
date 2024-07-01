@@ -32,7 +32,7 @@
   "power.themed.merling_water_friendly.description":"你的行动能力不会因为浸没在水中而受到影响。",
 
   "power.themed.merling_catch_the_rainbow.name": "在大地之上呼唤",
-  "power.themed.merling_catch_the_rainbow.description":"当你身处于陆地之上，且当前世界天气为晴时，手持海洋之心并激活该能力将消耗海洋之心并召唤雷暴。",
+  "power.themed.merling_catch_the_rainbow.description":"当你身处于陆地之上、且当前世界天气为晴时，手持海洋之心并激活该能力将消耗海洋之心并召唤雷暴。",
 
   "power.themed.blazeborn_nether_spawn.name": "神曲",
   "power.themed.blazeborn_nether_spawn.description":"你将在位于地狱的诡异森林中出生。",
@@ -41,10 +41,7 @@
   "power.themed.blazeborn_immunity.description":"你将不会收到火焰和凋零效果的影响。",
 
   "power.themed.blazeborn_inferno.name": "炽热",
-  "power.themed.blazeborn_inferno.description":"当你处于燃烧状态时，你造成的伤害将持续附加点燃效果。",
-
-  "power.themed.blazeborn_selfignite.name": "自燃",
-  "power.themed.blazeborn_selfignite.description":"点燃自身，在血量不为满时为自身持续施加生命恢复，抗性提升与缓慢效果。效果持续期间再次激活或接触水体将结束此状态。",
+  "power.themed.blazeborn_inferno.description":"当你处于燃烧状态时，你造成的伤害将持续附加点燃效果；在血量不为满时，将为自身持续施加生命恢复、抗性提升与缓慢效果。",
 
   "power.themed.blazeborn_lava_wander.name": "熔岩漫步者",
   "power.themed.blazeborn_lava_wander.description":"你能够直接骑乘炽足兽，不需要安装鞍座。",
