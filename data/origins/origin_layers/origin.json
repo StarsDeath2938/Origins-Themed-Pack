@@ -4,9 +4,9 @@
   "enabled": true,
   "origins": [
     "origins:human",
-    "origins:enderian",
     "origins:merling",
-    "origins:blazeborn"
+    "origins:blazeborn",
+    "origins:enderian"
   ],
   "allow_random": true,
   "exclude_random": [
