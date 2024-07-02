@@ -8,16 +8,25 @@
 				"type": "origins:apply_effect",
 				"effect": {
 					"effect": "minecraft:blindness",
-					"duration": 80,
+					"duration": 60,
 					"amplifier": 0
 				}
 			},
 			{
-				"type": "origins:ender_chest"
-			},
-			{
-				"type": "origins:play_sound",
-				"sound": "minecraft:block.ender_chest.open"
+				"type": "origins:delay",
+				"ticks": 30,
+				"action": {
+					"type": "origins:and",
+					"actions": [
+						{
+							"type": "origins:ender_chest"
+						},
+						{
+							"type": "origins:play_sound",
+							"sound": "minecraft:block.ender_chest.open"
+						}
+					]
+				}
 			}
 		]
 	},
