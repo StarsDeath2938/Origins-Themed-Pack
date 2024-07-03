@@ -1,7 +1,7 @@
 {
     "type": "origins:modify_player_spawn",
     "dimension": "minecraft:overworld",
-    "biome": "minecraft:warm_ocean",
+    "biome": "minecraft:beach",
     "spawn_strategy": "default",
     "dimension_distance_multiplier": "1.0"
 }

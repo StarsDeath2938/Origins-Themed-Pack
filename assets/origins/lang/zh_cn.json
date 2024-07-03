@@ -19,19 +19,19 @@
   "power.origins.like_water.name":"漂浮",
   "power.origins.like_water.description":"浮力使你在水中不会自然下沉。",
 
-  "power.origins.water_vision.name":"海洋之眼",
-  "power.origins.water_vision.description":"你对水底的一切了如指掌。浸没在水中时，你的视野能力将会大幅提升。",
-
   "power.themed.common_water_vulnerability.name": "水毒性",
   "power.themed.common_water_vulnerability.description": "接触任何形式的水都会对你造成伤害。",
 
   "power.themed.merling_ocean_spawn.name": "海",
-  "power.themed.merling_ocean_spawn.description":"你将在暖水海洋出生。",
+  "power.themed.merling_ocean_spawn.description":"你将在沙滩出生。",
 
   "power.themed.merling_water_friendly.name":"海洋亲和力",
   "power.themed.merling_water_friendly.description":"你的行动能力不会因为浸没在水中而受到影响。",
 
-  "power.themed.merling_catch_the_rainbow.name": "在大地之上呼唤",
+  "power.themed.merling_water_vision.name":"海洋之眼",
+  "power.themed.merling_water_vision.description":"你对水底的一切了如指掌。浸没在水中时，你的视野能力将会大幅提升。",
+
+  "power.themed.merling_catch_the_rainbow.name": "在荒野上呼喊",
   "power.themed.merling_catch_the_rainbow.description":"当你身处于陆地之上、且当前世界天气为晴时，手持海洋之心并激活该能力将消耗海洋之心并召唤雷暴。",
 
   "power.themed.blazeborn_nether_spawn.name": "神曲",
@@ -56,7 +56,7 @@
   "power.themed.enderian_ender_pearl.description":"每隔一段时间，你都能够扔出一个不造成伤害的末影珍珠。",
 
   "power.themed.enderian_space_traveler.name": "空间旅行者",
-  "power.themed.enderian_space_traveler.description":"当你处于空手状态并潜行时，打开背包将同时为你打开末影存储。这个能力会消耗饱食度，并要求你的生命值处于较高水平。",
+  "power.themed.enderian_space_traveler.description":"当你处于空手状态并潜行时，打开背包将同时为你打开末影存储。这个能力要求你的生命值处于较高水平。",
 
   "power.themed.enderian_pumpkin_hate.name": "???",
   "power.themed.enderian_pumpkin_hate.description":"阻止你以任何形式感知 ???，万圣节除外！"
