@@ -3,15 +3,14 @@
   "powers": [
     "themed:merling_ocean_spawn",
     "origins:water_breathing",
-    "origins:aqua_affinity",
-    "origins:swim_speed",
     "origins:like_water",
     "origins:aquatic",
     "origins:conduit_power_on_land",
+    "themed:merling_water_friendly",
     "themed:merling_water_vision",
-    "themed:merling_air_from_potions",
-    "themed:merling_glow_in_water",
     "themed:merling_catch_the_rainbow",
+    "themed:merling_glow_in_water",
+    "themed:merling_air_from_potions",
     "themed:merling_breath_on_spawn"
   ],
   "icon": {

@@ -50,7 +50,7 @@
 			{
 				"type": "origins:health",
 				"comparison": ">",
-				"compare_to": 8
+				"compare_to": 12
 			},
 			{
 				"type": "origins:sneaking"

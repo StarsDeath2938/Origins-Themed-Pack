@@ -17,7 +17,7 @@
                 },
                 {
                     "type": "origins:damage",
-                    "amount": 2,
+                    "amount": 4,
                     "damage_type": "minecraft:magic"
                 }
             ]
@@ -61,6 +61,6 @@
 
     "charge_cooldown": {
         "type": "origins:cooldown",
-        "cooldown": 40
+        "cooldown": 60
     }
 }

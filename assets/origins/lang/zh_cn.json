@@ -41,7 +41,7 @@
   "power.themed.blazeborn_immunity.description":"你将不会收到火焰和凋零效果的影响。",
 
   "power.themed.blazeborn_inferno.name": "炽热",
-  "power.themed.blazeborn_inferno.description":"当你处于燃烧状态时，你造成的伤害将持续附加点燃效果；在血量不为满时，将为自身持续施加生命恢复、抗性提升与缓慢效果。",
+  "power.themed.blazeborn_inferno.description":"当你处于燃烧状态时，你造成的伤害将持续附加点燃效果，并将为自身持续施加生命恢复和抗性提升效果。",
 
   "power.themed.blazeborn_lava_wander.name": "熔岩漫步者",
   "power.themed.blazeborn_lava_wander.description":"你能够直接骑乘炽足兽，不需要安装鞍座。",
@@ -54,6 +54,9 @@
 
   "power.themed.enderian_ender_pearl.name": "穿梭",
   "power.themed.enderian_ender_pearl.description":"每隔一段时间，你都能够扔出一个不造成伤害的末影珍珠。",
+
+  "power.themed.enderian_the_slender.name": "瘦长鬼影",
+  "power.themed.enderian_the_slender.description":"瘦长的体型小幅度提高了你的触及距离和潜行速度。",
 
   "power.themed.enderian_space_traveler.name": "空间旅行者",
   "power.themed.enderian_space_traveler.description":"当你处于空手状态并潜行时，打开背包将同时为你打开末影存储。这个能力要求你的生命值处于较高水平。",
