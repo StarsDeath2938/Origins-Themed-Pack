@@ -50,7 +50,7 @@
 
     "hot_blooded": {
         "type": "origins:stacking_status_effect",
-        "tick_rate": 4,
+        "tick_rate": 10,
         "min_stacks": 0,
         "max_stacks": 1,
         "duration_per_stack": 50,
@@ -77,7 +77,7 @@
                 {
                     "type": "origins:status_effect",
                     "effect": "minecraft:regeneration",
-                    "min_duration": 4,
+                    "min_duration": 10,
                     "inverted": true
                 }
             ]
