@@ -53,11 +53,10 @@
         "tick_rate": 4,
         "min_stacks": 0,
         "max_stacks": 1,
-        "duration_per_stack": 5,
+        "duration_per_stack": 50,
         "effects": [
             {
                 "effect": "minecraft:regeneration",
-                "amplifier": 1,
                 "is_ambient": true,
                 "show_particles": false,
                 "show_icon": false
@@ -70,7 +69,18 @@
             }
         ],
         "condition": {
-            "type": "origins:on_fire"
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_fire"
+                },
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:regeneration",
+                    "min_duration": 4,
+                    "inverted": true
+                }
+            ]
         },
         "hidden": true
     }
