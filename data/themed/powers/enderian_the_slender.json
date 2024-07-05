@@ -4,12 +4,12 @@
     {
       "name": "Extra Reach block reach",
       "attribute": "reach-entity-attributes:reach",
-      "value": 1.25,
+      "value": 0.5,
       "operation": "addition"
     },
     {
-      "name": "Extra Sneaking speed",
-      "attribute": "minecraft:player.sneaking_speed",
+      "name": "Extra Movement speed",
+      "attribute": "minecraft:generic.movement_speed",
       "value": 0.1,
       "operation": "addition"
     }
