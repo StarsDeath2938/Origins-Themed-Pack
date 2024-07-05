@@ -58,5 +58,10 @@
           "operation": "multiply_base"
         },
         "hidden": true
+    },
+
+    "no_stupidly_fast": {
+      "type": "origins:effect_immunity",
+      "effect": "minecraft:dolphins_grace"
     }
 }

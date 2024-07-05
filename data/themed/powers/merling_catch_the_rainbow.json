@@ -13,27 +13,36 @@
         }
       },
       {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.guardian.death"
+      },
+      {
         "type": "origins:apply_effect",
         "effect": {
           "effect": "minecraft:water_breathing",
           "duration": 9600,
           "is_ambient": true,
-          "show_particles": true,
-          "show_icon": true
+          "show_particles": false,
+          "show_icon": false
         }
       },
       {
-        "type": "origins:execute_command",
-        "command": "weather thunder",
-        "permission_level": 4
-      },
-      {
-        "type": "origins:play_sound",
-        "sound": "minecraft:entity.guardian.death"
-      },
-      {
-        "type": "origins:play_sound",
-        "sound": "minecraft:block.beacon.activate"
+        "type": "origins:delay",
+        "ticks": 40,
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:play_sound",
+              "sound": "minecraft:block.beacon.activate"
+            },
+            {
+              "type": "origins:execute_command",
+              "command": "weather thunder",
+              "permission_level": 4
+            }
+          ]
+        }
       }
     ]
   },
@@ -44,6 +53,9 @@
         "type": "origins:submerged_in",
         "fluid": "minecraft:water",
         "inverted": true
+      },
+      {
+        "type": "origins:exposed_to_sky"
       },
       {
         "type": "origins:dimension",
