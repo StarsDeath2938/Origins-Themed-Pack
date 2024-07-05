@@ -61,6 +61,6 @@
 
     "charge_cooldown": {
         "type": "origins:cooldown",
-        "cooldown": 60
+        "cooldown": 50
     }
 }
