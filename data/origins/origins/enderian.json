@@ -1,12 +1,12 @@
 {
   "loading_priority": 10,
   "powers": [
-    "themed:common_water_vulnerability",
+    "origins:water_vulnerability",
     "themed:enderian_ender_pearl",
-    "origins:ender_particles",
     "themed:enderian_pumpkin_hate",
     "themed:enderian_the_slender",
-    "themed:enderian_space_traveler"
+    "themed:enderian_space_traveler",
+    "origins:ender_particles"
   ],
   "icon": {
     "item": "minecraft:ender_pearl"

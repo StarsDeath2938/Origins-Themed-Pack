@@ -1,7 +1,7 @@
 {
   "loading_priority": 10,
   "powers": [
-    "themed:common_water_vulnerability",
+    "origins:water_vulnerability",
     "themed:blazeborn_nether_spawn",
     "themed:blazeborn_charge_anchor",
     "themed:blazeborn_immunity",
