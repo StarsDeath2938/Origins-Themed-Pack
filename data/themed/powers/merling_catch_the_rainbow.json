@@ -17,16 +17,6 @@
         "sound": "minecraft:entity.guardian.death"
       },
       {
-        "type": "origins:apply_effect",
-        "effect": {
-          "effect": "minecraft:water_breathing",
-          "duration": 9600,
-          "is_ambient": true,
-          "show_particles": false,
-          "show_icon": false
-        }
-      },
-      {
         "type": "origins:delay",
         "ticks": 40,
         "action": {
