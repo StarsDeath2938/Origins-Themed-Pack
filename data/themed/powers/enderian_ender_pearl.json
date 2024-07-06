@@ -8,9 +8,5 @@
   "key": {
     "key": "key.origins.primary_active",
     "continuous": false
-  },
-  "condition": {
-    "type": "origins:power_active",
-    "power": "themed:*_dark_embrace"
   }
 }
