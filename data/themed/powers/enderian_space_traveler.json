@@ -1,6 +1,6 @@
 {
 	"type": "origins:active_self",
-	"cooldown": 80,
+	"cooldown": 60,
 	"entity_action": {
 		"type": "origins:and",
 		"actions": [
@@ -9,24 +9,15 @@
 				"effect": {
 					"effect": "minecraft:blindness",
 					"duration": 60,
-					"amplifier": 0
+					"amplifier": 1
 				}
 			},
 			{
-				"type": "origins:delay",
-				"ticks": 30,
-				"action": {
-					"type": "origins:and",
-					"actions": [
-						{
-							"type": "origins:ender_chest"
-						},
-						{
-							"type": "origins:play_sound",
-							"sound": "minecraft:block.ender_chest.open"
-						}
-					]
-				}
+				"type": "origins:ender_chest"
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:block.ender_chest.open"
 			}
 		]
 	},
