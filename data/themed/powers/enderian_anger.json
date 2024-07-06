@@ -1,0 +1,9 @@
+{
+  "type": "origins:shaking",
+  "condition": {
+    "type": "origins:relative_health",
+    "comparison": "<",
+    "compare_to": 0.6
+  },
+  "hidden": true
+}

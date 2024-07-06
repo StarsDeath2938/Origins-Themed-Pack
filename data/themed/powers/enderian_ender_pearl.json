@@ -1,6 +1,6 @@
 {
   "type": "origins:fire_projectile",
-  "cooldown": 90,
+  "cooldown": 120,
   "entity_type": "origins:enderian_pearl",
   "sound": "minecraft:entity.ender_pearl.throw",
   "speed": 1.5,
@@ -8,5 +8,9 @@
   "key": {
     "key": "key.origins.primary_active",
     "continuous": false
+  },
+  "condition": {
+    "type": "origins:power_active",
+    "power": "themed:*_dark_embrace"
   }
 }
