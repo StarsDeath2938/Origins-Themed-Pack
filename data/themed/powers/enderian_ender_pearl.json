@@ -1,6 +1,6 @@
 {
   "type": "origins:fire_projectile",
-  "cooldown": 120,
+  "cooldown": 90,
   "entity_type": "origins:enderian_pearl",
   "sound": "minecraft:entity.ender_pearl.throw",
   "speed": 1.5,
