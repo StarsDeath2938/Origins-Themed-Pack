@@ -39,9 +39,9 @@
 				}
 			},
 			{
-				"type": "origins:health",
-				"comparison": ">",
-				"compare_to": 12
+				"type": "origins:relative_health",
+				"comparison": ">=",
+				"compare_to": 0.6
 			},
 			{
 				"type": "origins:sneaking"
