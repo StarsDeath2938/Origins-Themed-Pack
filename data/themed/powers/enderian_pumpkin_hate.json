@@ -32,16 +32,6 @@
     },
     "hidden": true
   },
-  "pumpkin_tooltip": {
-    "type": "origins:tooltip",
-    "item_condition": {
-      "type": "origins:ingredient",
-      "ingredient": {
-        "tag": "origins:pumpkin_related"
-      }
-    },
-    "text": "???"
-  },
   "snowwwman": {
     "type": "origins:prevent_feature_render",
     "feature": "snowman_pumpkin",

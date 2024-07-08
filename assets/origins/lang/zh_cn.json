@@ -62,5 +62,6 @@
   "power.themed.enderian_space_traveler.description":"当你处于空手状态并潜行时，打开背包将同时为你打开末影存储。这个能力要求你的生命值处于较高水平。",
 
   "power.themed.enderian_pumpkin_hate.name": "???",
-  "power.themed.enderian_pumpkin_hate.description":"阻止你以任何形式感知 ???，万圣节除外！"
+  "power.themed.enderian_pumpkin_hate.description":"阻止你以任何形式感知 ???，万圣节除外！",
+  "power.themed.enderian_pumpkin_hate_prevent_eating.name": "???"
 }
