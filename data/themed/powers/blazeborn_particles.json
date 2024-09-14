@@ -1,38 +1,11 @@
 {
-    "type": "origins:multiple",
-
-    "ash_particle": {
-        "type": "origins:particle",
-        "particle": "minecraft:white_ash",
-        "frequency": 4,
-        "hidden": true,
-        "condition": {
-            "type": "origins:dimension",
-            "dimension": "minecraft:the_nether",
-            "inverted": true
-        }
-    },
-
-    "flame_particle": {
-        "type": "origins:particle",
-        "particle": "minecraft:flame",
-        "frequency": 4,
-        "hidden": true,
-        "condition": {
-            "type": "origins:or",
-            "conditions": [
-                {
-                    "type": "origins:dimension",
-                    "dimension": "minecraft:the_nether",
-                    "inverted": false
-                },
-                {
-                    "type": "origins:power_active",
-                    "power": "*:*_selfignite"
-                }
-            ]
-        }
-    },
-
-    "hidden": true
+    "type": "origins:particle",
+    "particle": "minecraft:white_ash",
+    "frequency": 4,
+    "hidden": true,
+    "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether",
+        "inverted": true
+    }
 }
